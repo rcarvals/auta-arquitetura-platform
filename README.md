@@ -1,22 +1,28 @@
-# Plataforma Institucional e Painel Administrativo - Autá Arquitetura
+# 🏛️ Autá Arquitetura & Design — Plataforma Web Full-Stack
 
-Sistema Web Full-Stack desenvolvido sob medida para gestão de portfólio de arquitetura, contendo área administrativa protegida, sistema dinâmico de postagens/projetos, integração com banco de dados SQL e disparos automatizados de e-mails.
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Tecnologias Utilizadas
-* **PHP Nativo (Arquitetura em Camadas / MVC)**
-* **Banco de Dados Relacional (SQL)**
-* **PHPMailer** (para automação e envio de e-mails de contato e formulários)
-* **HTML5, CSS3, JavaScript** (Front-end responsivo)
+Plataforma web institucional e sistema de gerenciamento de conteúdo (CMS) desenvolvido sob medida para escritório de arquitetura e design. A aplicação integra apresentação de portfólio, blog dinâmico, captação automatizada de leads e painel administrativo protegido para gestão completa sem intervenção no código-fonte.
 
-## Arquitetura do Projeto
-A aplicação foi estruturada separando a lógica de negócio, controladores, modelos e views:
-- `/src/Controllers`: Lógica de rotas e processamento de dados.
-- `/src/Models`: Camada de comunicação e persistência com o banco SQL.
-- `/src/Views/pages`: Páginas públicas e administrativas (Login, Dashboard, Gestão de Projetos e Blog).
-- `/src/vendor`: Gerenciamento de dependências externas (PHPMailer).
+🔗 **Acesse em produção:** [www.autaarquitetura.com.br](https://www.autaarquitetura.com.br)
 
-## Principais Funcionalidades
-- **Painel Administrativo Seguro:** Autenticação de administradores para gerenciar conteúdos do site sem precisar alterar código-fonte.
-- **Gerenciamento de Conteúdo (CRUD):** Criação, edição e listagem dinâmica de projetos de arquitetura e posts de blog (`admin-create.php`, `admin-post-create.php`).
-- **Automação de E-mails:** Envio automatizado de mensagens de contato utilizando PHPMailer integrado ao servidor.
-- **Persistência SQL:** Armazenamento seguro de dados institucionais, enquetes e leads capturados.
+---
+
+## 🏗️ Arquitetura do Sistema
+
+O projeto foi estruturado seguindo o padrão de **separação de responsabilidades (MVC simplificado)**, garantindo organização, segurança e facilidade de manutenção:
+
+```text
+public_html/
+├── assets/          # Recursos estáticos (CSS, JS, uploads)
+├── config/          # Configurações de ambiente e conexão com banco de dados
+├── public/          # Ponto de entrada público e arquivos expostos
+└── src/
+    ├── Controllers/ # Regras de negócio, controle de rotas e fluxo de dados
+    ├── Models/      # Camada de persistência e consultas SQL
+    ├── Views/       # Interfaces públicas e telas do painel administrativo
+    └── vendor/      # Bibliotecas e dependências externas (PHPMailer)
