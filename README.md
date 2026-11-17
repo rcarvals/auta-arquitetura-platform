@@ -25,4 +25,4 @@ public_html/
     ├── Controllers/ # Regras de negócio, controle de rotas e fluxo de dados
     ├── Models/      # Camada de persistência e consultas SQL
     ├── Views/       # Interfaces públicas e telas do painel administrativo
-    └── vendor/      # Bibliotecas e dependências externas (PHPMailer)
+    └── vendor/      # Bibliotecas e dependências externas (PHPMailer) 
