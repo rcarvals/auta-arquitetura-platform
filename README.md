@@ -26,3 +26,26 @@ public_html/
     ├── Models/      # Camada de persistência e consultas SQL
     ├── Views/       # Interfaces públicas e telas do painel administrativo
     └── vendor/      # Bibliotecas e dependências externas (PHPMailer) 
+
+
+## ⚙️ Funcionalidades Principais
+
+* **🔐 Autenticação e Painel Administrativo (`CMS`):** Área restrita com controle de sessão (`admin-login.php`, `admin-dashboard.php`) para gestão interna da plataforma.
+* **📁 Gestão Dinâmica de Portfólio e Blog (`CRUD`):** Criação, edição, publicação e exclusão de projetos arquitetônicos, artigos de blog, banners principais (*hero*) e membros da equipe.
+* **🗄️ Persistência em Banco de Dados Relacional:** Estruturação de tabelas em SQL para armazenamento seguro de projetos, postagens, leads e métricas de enquetes.
+* **✉️ Automação de E-mails e Anti-Spam:** Sistema de contato integrado via **PHPMailer** para disparos automatizados, aliado a validações de segurança contra bots e spam.
+* **📱 Interface Responsiva (UI/UX):** Layout projetado com foco em hierarquia visual, tipografia limpa e fluidez de navegação em dispositivos móveis e desktops.
+
+---
+
+## 🛡️ Boas Práticas Aplicadas
+
+* **Separação entre Lógica e Apresentação:** Isolamento de consultas SQL na camada `Models` e renderização visual na camada `Views`.
+* **Segurança de Credenciais:** Arquivos sensíveis de configuração desacoplados da camada pública de visualização.
+* **Código Limpo e Modular:** Reutilização de componentes visuais (`partials`) para cabeçalhos, rodapés e menus.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido e arquitetado por **Ricardo** — *Arquiteto & Desenvolvedor Full-Stack*.    
